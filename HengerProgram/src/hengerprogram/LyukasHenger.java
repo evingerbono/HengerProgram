@@ -20,6 +20,6 @@ public class LyukasHenger extends TomorHenger{
     
     public double terfogat() {
         
-        return 1;
+        return super.terfogat()*super.suly();
     }
 }

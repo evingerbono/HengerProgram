@@ -19,7 +19,7 @@ public class TomorHenger extends Henger{
 
     public double suly() {
         
-        return 1;
+        return fajsuly;
     }
     
 }
