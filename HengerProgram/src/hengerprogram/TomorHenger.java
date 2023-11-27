@@ -4,7 +4,7 @@ public class TomorHenger extends Henger{
     private double fajsuly;
     
     public TomorHenger(double sugar, double magassag) {
-        super(sugar, magassag);
+        this(sugar, magassag, 1);
         
     }
     
@@ -21,5 +21,16 @@ public class TomorHenger extends Henger{
         
         return fajsuly;
     }
+    
+    public double terfogat() {
+        
+        return super.terfogat()*suly();
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()+"fajsuly=" + fajsuly;
+    }
+    
     
 }

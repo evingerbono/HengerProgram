@@ -7,9 +7,10 @@ public abstract class Henger {
     public Henger(double r, double m) {
         this.sugar=r;
         this.magassag=m;
+        hengerDarab++;
     }
 
-    public int getHengerDarab() {
+    public static int getHengerDarab() {
         return hengerDarab;
     }
 
@@ -23,7 +24,12 @@ public abstract class Henger {
 
     public double terfogat() {
         
-        return (sugar*sugar)*Math.PI;
+        return (sugar*sugar)*Math.PI*magassag;
+    }
+
+    @Override
+    public String toString() {
+        return "Henger{" + "sugar=" + sugar + ", magassag=" + magassag + '}';
     }
     
     

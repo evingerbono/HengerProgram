@@ -5,7 +5,7 @@ public class LyukasHenger extends TomorHenger{
     private double falvastagsag;
     
     public LyukasHenger(double sugar, double magassag, double fajsuly) {
-        super(sugar, magassag, fajsuly);
+        this(sugar,magassag,fajsuly,1);
         
     }
 
@@ -19,7 +19,14 @@ public class LyukasHenger extends TomorHenger{
     }
     
     public double terfogat() {
-        
-        return super.terfogat()*super.suly();
+        Henger bel = new Henger(getSugar()-falvastagsag, getMagassag()) {};
+        return super.terfogat()-bel.terfogat();
     }
+
+    @Override
+    public String toString() {
+        return super.toString()+"falvastagsag=" + falvastagsag;
+    }
+    
+    
 }
