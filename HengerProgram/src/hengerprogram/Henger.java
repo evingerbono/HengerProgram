@@ -23,7 +23,7 @@ public abstract class Henger {
 
     public double terfogat() {
         
-        return 1;
+        return (sugar*sugar)*Math.PI;
     }
     
     
